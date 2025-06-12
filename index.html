@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz Saatleri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Şehir Seçin</h1>
+    <select id="city">
+        <option value="Istanbul">İstanbul</option>
+        <option value="Ankara">Ankara</option>
+        <option value="Izmir">İzmir</option>
+    </select>
+    <button id="getTimes">Saatleri Getir</button>
+    <div id="times" class="hidden">
+        <h2 id="selected-city"></h2>
+        <ul>
+            <li><strong>İmsak:</strong> <span id="imsak"></span></li>
+            <li><strong>Güneş:</strong> <span id="sunrise"></span></li>
+            <li><strong>Öğle:</strong> <span id="dhuhr"></span></li>
+            <li><strong>İkindi:</strong> <span id="asr"></span></li>
+            <li><strong>Akşam:</strong> <span id="maghrib"></span></li>
+            <li><strong>Yatsı:</strong> <span id="isha"></span></li>
+        </ul>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
